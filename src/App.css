@@ -1,0 +1,35 @@
+
+div{
+  display: flex;
+  height: 80vh;
+  width: 98%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+img{
+  width: 10vw;
+  animation: grown;
+  transition: ease-in-out 0.5s;
+  animation: grown 2s linear 0s infinite normal both;
+}
+@keyframes grown {
+  0%{
+    transform: scale(100%);
+  } 50%{
+    transform: scale(115%);
+  }
+}
+button{
+  height: 7vh;
+  width: 10vw;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: ease-in-out 0.4s;
+}
+button:hover{
+  transform: scale(108%);
+  font-size: 22px;
+}
