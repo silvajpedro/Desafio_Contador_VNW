@@ -2,9 +2,13 @@
 div{
   display: flex;
   height: 80vh;
-  width: 98%;
+  width: 99.5%;
   align-items: center;
   justify-content: space-evenly;
+
+}
+:nth-child(1){
+  border: none;
 }
 img{
   width: 10vw;
@@ -12,11 +16,14 @@ img{
   transition: ease-in-out 0.5s;
   animation: grown 2s linear 0s infinite normal both;
 }
+:nth-child(7){
+  width: 5%;
+}
 @keyframes grown {
   0%{
     transform: scale(100%);
   } 50%{
-    transform: scale(115%);
+    transform: scale(130%);
   }
 }
 button{
@@ -32,4 +39,9 @@ button{
 button:hover{
   transform: scale(108%);
   font-size: 22px;
+}
+.middleButton{
+  position: absolute;
+  left: 44.5%;
+  top: 70vh;
 }
